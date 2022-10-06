@@ -4,13 +4,14 @@
 #include <iostream>
 class System {
 	private:
-		Linkedlist list;
+		LinkedList list;
 	public:
 		System(Linkedlist list);
 		~System();
 		void readFile(std::string fileName);
 		void print();
 		void delete();
+        LinkedList getList();
 };
 
 #endif

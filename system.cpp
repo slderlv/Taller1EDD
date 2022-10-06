@@ -30,4 +30,22 @@ void System::readFile(std::string fileName){
 	}	
 	myFileStream.close();
 }
-void print();
+
+void System::print(){
+    Node* current = list->first;
+    while (current != nullptr){
+        std::cout << current->getRegion()->getCode() << ": " << current->getRegion()->getSize() << " registros";
+        current = current->getNext();
+    }
+}
+
+void System::delete{
+    Node* current = list->first;
+    Node* del = nullptr;
+
+    while (current != nullptr){
+        del = current
+        current = current->getNext();
+        delete del;
+    }
+}

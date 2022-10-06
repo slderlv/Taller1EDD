@@ -1,18 +1,22 @@
-#ifndef NODE_H
-#define NODE_H
+#include "node.h"
 #include "region.h"
 
-class Node{
-	private:
-  		Node* next;
-  		Region* region;
-  
-	public:
-		Node();
-    		Node(Region* region);
-    		~Node();
-    		Region* getRegion();
-    		Node* getNext();
-    		void setNext(Node* next);
-};
-#endif
+Node::Node(){
+
+}
+
+Node::Node(Region* region){
+  this->region = region;
+  next = nullptr;
+}
+Node* Node::getNext(){
+  return next;
+}
+void Node::setNext(Node* next){
+  this->next = next;
+}
+Region* Node::getRegion(){
+  return region;
+}
+
+Node::~Node(){}

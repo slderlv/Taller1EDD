@@ -3,13 +3,16 @@
 #include "region.h"
 
 class Node{
-  Node* next;
-  Region region;
-  public:
-    Node(Region region);
-    ~Node();
-    Region getRegion();
-    Node* getNext();
-    setNext(Node* next);
-}
+	private:
+  		Node* next;
+  		Region* region;
+  
+	public:
+		Node();
+    		Node(Region* region);
+    		~Node();
+    		Region* getRegion();
+    		Node* getNext();
+    		void setNext(Node* next);
+};
 #endif

@@ -1,10 +1,16 @@
 #include <iostream>
 #include "region.h"
 
-Region::Region(string code){
-  this->code = code;
+Region::Region(){
+	code = "defecto";
+	size = 0;
 }
-string Region::getCode(){
+
+Region::Region(std::string code){
+  this->code = code;
+  size = 0;
+}
+std::string Region::getCode(){
   return code;
 }
 int Region::getSize(){
@@ -13,3 +19,5 @@ int Region::getSize(){
 void Region::setSize(int size){
   this->size = size;
 }
+
+Region::~Region(){}

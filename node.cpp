@@ -1,6 +1,11 @@
-#include "hode.h"
+#include "node.h"
+#include "region.h"
 
-Node::Node(Region region){
+Node::Node(){
+
+}
+
+Node::Node(Region* region){
   this->region = region;
   next = nullptr;
 }
@@ -10,6 +15,8 @@ Node* Node::getNext(){
 void Node::setNext(Node* next){
   this->next = next;
 }
-Region Node::getRegion(){
+Region* Node::getRegion(){
   return region;
 }
+
+Node::~Node(){}

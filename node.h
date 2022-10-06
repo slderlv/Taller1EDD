@@ -1,3 +1,5 @@
+#ifndef NODE_H
+#define NODE_H
 #include "region.h"
 
 class Node{
@@ -10,3 +12,4 @@ class Node{
     Node* getNext();
     setNext(Node* next);
 }
+#endif

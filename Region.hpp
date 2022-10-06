@@ -1,3 +1,6 @@
+#ifndef REGION_H
+#define REGION_H
+
 #include <iostream>
 class Region{
   string code;
@@ -9,3 +12,4 @@ class Region{
     int getSize();
     setSize(int size);
 }
+#endif

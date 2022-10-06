@@ -1,4 +1,6 @@
-#include "Node.hpp"
+#ifndef LINKEDLIST_H
+#define LINKEDLIST_H
+#include "node.h"
 
 class LinkedList{
   Node* first;
@@ -10,3 +12,4 @@ class LinkedList{
     void sort();
     Node* exists(std::string code);
 }
+#endif

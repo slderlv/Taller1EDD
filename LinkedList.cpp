@@ -1,4 +1,4 @@
-#include "LinkedList.hpp"
+#include "linkedList.h"
 
 LinkedList::LinkedList(){
   first = nullptr;

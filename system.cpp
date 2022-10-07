@@ -21,7 +21,7 @@ void System::readFile(std::string fileName){
 		std::stringstream ss(line);
 		getline(ss,code,';');
 
-        	Node* node = list.exists(code);
+        Node* node = list.exists(code);
 		//std::cout << node << std::endl;
 		if (node != nullptr){
             		list.sum(node);
